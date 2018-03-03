@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<!-- This sets the language that your characters are in -->
+		<meta charset="utf-8">
+		<!-- This ensures that your media queries work -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- This is what appears in the tab of your browser page -->
+		<title></title>
+
+		<!-- This makes the bootstrap css work -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.css">
+		<!-- This connects my CSS external stylesheet to the index.html -->
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+		<div class="container mt-5">
+
+								<div id="newProfile" class="col-sm-6 col-sm-offset-3 col-md-8 col-md-offset-2 col-lg-10 col-lg-offset-1">
+									<h1>New Profile</h1>
+									<!-- new profile -->
+									<form>
+										<!-- NAME -->
+										<div class="form-group">
+											<input type="text" id="userfname" class="form-control" placeholder="First Name">
+											<input type="text" id="userlname" class="form-control" placeholder="Last Name">
+										</div>
+										<!-- GENDER -->
+										<div class="form-group">
+											Gender:
+											<label class="radio-inline">
+												<input type="radio" name="radio1" class="userGender" value="male"> Male
+											</label>
+											<label class="radio-inline">
+												<input type="radio" name="radio1" class="userGender" value="female"> Female
+											</label>
+										</div>
+
+										<!-- EMAIL -->
+										<div class="form-group">
+											<input type="email" id="userEmail" class="form-control" placeholder="Email Address">
+										</div>
+
+										<!-- PHONE NUMBER -->
+										<div class="form-group">
+											<input type="number" id="userPhone" class="form-control" placeholder="Phone Number">
+										</div>
+
+										<!-- FAVORITE PRIMARY COLOR -->
+										<div class="form-group">
+											<select class="form-control">
+												<option value="" class="userColor">Select your favorite color</option>
+												<option value="Red" class="userColor">Red</option>
+												<option value="Green" class="userColor">Green</option>
+												<option value="Blue" class="userColor">Blue</option>
+											</select>
+										</div>
+
+										<!-- CONTINENT OF BIRTH -->
+										<div class="form-group">
+											Continent of birth:
+											<br>
+											<label class="radio-inline">
+												<input type="radio" name="radio2" class="userBirth" value="Africa"> Africa
+											</label>
+											<label class="radio-inline">
+												<input type="radio" name="radio2" class="userBirth" value="Asia"> Asia
+											</label>
+											<label class="radio-inline">
+												<input type="radio" name="radio2" class="userBirth" value="Australia"> Australia
+											</label>
+											<label class="radio-inline">
+												<input type="radio" name="radio2" class="userBirth" value="Europe"> Europe
+											</label>
+											<label class="radio-inline">
+												<input type="radio" name="radio2" class="userBirth" value="North America"> North America
+											</label>
+											<label class="radio-inline">
+												<input type="radio" name="radio2" class="userBirth" value="South America"> South America
+											</label>
+										</div>
+										<button id="sendDataButton" type="button" class="btn btn-default">Continue</button>
+
+										<div id="results"></div>
+									</form>
+
+								</div><!-- /.col-sm-6 -->
+
+								<div id="updatedProfile" class="col-sm-6 col-sm-offset-3">
+									<h1>User Profile</h1>
+									<!-- updated profile -->
+									<div>
+										<h2 id='newUserName'></h2>
+										<h3 id="newUserGender"></h3>
+										<h3 id="newUserEmail"></h3>
+										<h3 id="newUserPhone"></h3>
+										<h3 id="newUserColor"></h3>
+										<h3 id="newUserBirth"></h3>
+									</div><!-- /#updatedProfile -->
+
+								</div><!-- /.col-sm-6 -->
+
+		</div><!-- /.container -->
+
+		<!-- This gives access to the jquery library -->
+		<script
+		src="https://code.jquery.com/jquery-3.2.1.js"
+		integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+		crossorigin="anonymous"></script>
+
+		<!-- Popper is required for bootstrap 4 JS functionality -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+
+		<!-- This makes bootstrap 4 JS work -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+		<!-- This connects my JS external file to the index.html -->
+		<script src="js/main.js" type="text/javascript"></script>
+
+	</body>
+</html>
